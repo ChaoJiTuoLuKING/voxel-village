@@ -2,7 +2,7 @@
 
 一个用 React、TypeScript 和 Three.js 制作的 3D 体素村庄。在湖畔、农田和瀑布之间自由漫游，照料菜地，或在西岸栈桥抛竿钓鱼。收获可放进仓库并出售，进度保存在当前浏览器。
 
-![体素山谷村](projects/voxel-village/public/cover.jpg)
+![体素山谷村实机截图，村庄、湖面、瀑布和山坡花丛](docs/images/valley-preview.jpg)
 
 ## 本地启动
 
