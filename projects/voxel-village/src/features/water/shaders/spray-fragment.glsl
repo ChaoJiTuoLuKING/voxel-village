@@ -1,0 +1,2 @@
+uniform vec3 uCol;uniform float uK;varying float vA;varying float vMist;
+void main(){float d=length(gl_PointCoord-.5);float a=smoothstep(.5,mix(.12,0.,vMist),d);gl_FragColor=vec4(uCol*mix(1.5,1.,vMist),a*vA*mix(.7,.22,vMist)*uK);}

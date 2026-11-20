@@ -1,0 +1,1 @@
+uniform float uK;varying vec2 vUv;void main(){vec2 p=vUv*2.-1.;float r=length(p),t=clamp((r-.78)/.22,0.,1.);vec3 c=.5+.5*cos(6.2831*(t*.85+vec3(0.,.33,.67)));float a=sin(3.14159*t)*step(.78,r)*step(r,1.)*smoothstep(0.,.35,p.y)*uK;gl_FragColor=vec4(c,a);}

@@ -1,0 +1,1 @@
+attribute float depth;uniform mat4 textureMatrix;varying float vD;varying vec3 vP;varying vec4 vR;void main(){vD=depth;vec4 p=modelMatrix*vec4(position,1.);vP=p.xyz;vR=textureMatrix*p;gl_Position=projectionMatrix*viewMatrix*p;}

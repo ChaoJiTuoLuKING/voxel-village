@@ -1,0 +1,1 @@
+varying vec3 vP;varying vec2 vUv;uniform float t;void main(){vUv=uv;vec3 p=position;p.y+=sin(uv.x*3.14159)*(sin(p.z*4.-t*2.)*.012+cos(p.x*7.+t)*.008);vP=(modelMatrix*vec4(p,1.)).xyz;gl_Position=projectionMatrix*viewMatrix*vec4(vP,1.);}
